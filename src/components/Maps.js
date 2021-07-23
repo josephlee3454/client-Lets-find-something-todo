@@ -18,10 +18,10 @@ export class Maps extends React.Component {
     const { latitude } = this.props;
     const { longitude } = this.props;
 
-    var url = "http://server-lfstd.herokuapp.com/events?location";
+    var url = "https://server-lfstd.herokuapp.com/events?location";
 
     if (latitude !== undefined && longitude !== undefined) {
-      url = "http://server-lfstd.herokuapp.com/events?latitude=" + latitude + "&longitude=" + longitude;
+      url = "https://server-lfstd.herokuapp.com/events?latitude=" + latitude + "&longitude=" + longitude;
       this.setState({ latitude: latitude, longitude: longitude });
     } else {
       url += location;
